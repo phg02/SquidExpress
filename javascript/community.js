@@ -32,3 +32,13 @@ commentBtn.addEventListener('click', function() {
     wrapper.classList.remove('hidden');
     modal.classList.remove('hidden');
 });
+
+let closeBtn = document.querySelector('.close-btn');
+
+closeBtn.addEventListener('click', function() {
+    let wrapper = document.querySelector('.wrapper');
+    let modal = document.querySelector('.modal');
+
+    wrapper.classList.add('hidden');
+    modal.classList.add('hidden');
+});
