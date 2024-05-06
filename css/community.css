@@ -1,3 +1,7 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 :root{
   font-size: 17px;
 }
@@ -7,10 +11,6 @@ color:black;
 background-color: #ffffff;
 margin: 0;
 padding: 0;
-}
-
-.main{
-  position: absolute;
 }
 
 .cards{
@@ -27,7 +27,6 @@ padding: 0;
     max-width: 30rem;
     min-width: 10rem;
     margin-left: 30rem;
-    margin-right: 1rem;
 }
 .card-header{
     padding: 15px 15px 15px 15px;
@@ -83,24 +82,26 @@ padding: 0;
 }
 
 
-
-.wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.modal {
   position: fixed;
-  width: 100vw;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.308);
-}
-.modal{
-  width: 37rem;
-  max-width: 100%;
-  max-height: 30rem;
-  background-color: #ffffff;
-  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 600px;
+  max-width: 90%;
+  height: 500px;
   overflow-y: scroll;
 }
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .modal-header{
   display: flex;
   flex-direction: column;
@@ -117,7 +118,7 @@ padding: 0;
   gap: 10px;
   align-items: center;
 }
-.close-btn{
+.close-button{
   background-color: #ffffff;
   border: none;
   cursor: pointer;
@@ -173,7 +174,7 @@ padding: 0;
 .comment-input{
   border-radius: 15px;
   width: 70%;
-  height: 20px;
+  height: 40px;
   padding: 5px;
 }
 
@@ -181,8 +182,21 @@ input::placeholder{
   color: #3a3a3a;
 }
 
-.hidden{
-  display: none;
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 

@@ -51,6 +51,28 @@
             </ul>
         </nav>
 
+        <div class="search-bar">
+            <div class="top">
+                <div class="search"></div>
+                <div class="sortby">
+                    <select>
+                        <option>Earliest post</option>
+                        <option>Latest post</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <p>Filter by date:</p>
+                <div class="start-date">
+                    <input type="date">
+                </div>
+                <div class="end-date">
+                    <input type="date">
+                </div>
+            </div>
+        </div>
+
         <div class="cards">
             <div class="card">
                 <div class="card-header">
@@ -68,7 +90,7 @@
                 </div>
 
                 <div class="card-footer">
-                    <div type="button" class="commentBtn">
+                    <div type="button" class="commentBtn" data-modal-target="#modal">
                         <i class="fa-regular fa-comment d-inline"></i>
                     </div>
                     <p>100 Comments</p>
@@ -100,8 +122,7 @@
         </div>
     </div>
 
-    <div class="wrapper hidden">
-        <div class="modal hidden">
+        <div class="modal" id="modal">
             <div class="modal-header">
                 <div class="information">
                     <div class="infor">
@@ -109,7 +130,7 @@
                         <p>Username . dd/mm/yyyy</p>    
                     </div>
     
-                    <button class="close-btn">&times;</button>
+                    <button data-close-button class="close-button">&times;</button>
                 </div>       
             </div>
 
@@ -139,7 +160,8 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        <div id="overlay"></div>
     
 <script src="javascript/community.js"></script>
 </body>
