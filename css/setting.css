@@ -13,12 +13,7 @@
     display: flex;
   }
   
-  .setting{
-    margin-left: 13rem;
-    margin-right: 1rem;
-  }
-  
-  .navbar{
+  #navbar{
     width: 12rem;
     height: 100vh;
     position: fixed;
@@ -26,7 +21,7 @@
     border-right: 2px solid #B8938B;
   }
   
-  .nav-list{
+  #nav-list{
     list-style: none;
     padding: 0 1.2rem;
     margin: 0;
@@ -35,19 +30,19 @@
     align-items: center;
   }
   
-  .nav-item{
+  #nav-item{
     width: 100%;
   }
   
-  .nav-link:hover{
+  #nav-link:hover{
     color: #B6845C;
   }
   
-  .nav-link:active{
+  #nav-link:active{
     color: #E2AD83;
   }
   
-  .nav-link{
+  #nav-link{
     display: flex;
     gap:12px;
     align-items: center;
@@ -57,26 +52,22 @@
   }
   
   @media only screen and (max-width: 600px){
-    .setting{
-      margin: 0.5rem 0.5rem;
-    }
-  
-    .navbar{
+    #navbar{
       bottom: 0;
       width: 100vw;
       height: 4rem;
       border-top: 2px solid #B8938B;
     }
   
-    .nav-list{
+    #nav-list{
       flex-direction: row;
     }
   
-    .nav-link{
+    #nav-link{
       justify-content: center;
     }
   
-    .nav-link p{
+    #nav-link p{
       display: none;
     }
   }
