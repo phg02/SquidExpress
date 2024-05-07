@@ -52,10 +52,25 @@ function openModal(modal) {
   if (modal == null) return
   modal.classList.add('active')
   overlay.classList.add('active')
+  document.body.classList.add('modal-open');
 }
 
 function closeModal(modal) {
   if (modal == null) return
   modal.classList.remove('active')
   overlay.classList.remove('active')
+  document.body.classList.remove('modal-open');
 }
+
+let commentHolder = document.querySelector('.content');
+let commentBtn = document.querySelector('#comment-btn');
+
+commentBtn.addEventListener('click', function() {
+  let commentInput = document.querySelector('.comment-input');
+  let card = document.createElement('p');
+
+  card.textContent = commentInput.value;
+  commentHolder.appendChild(card);
+  commentInput.value = '';
+
+});

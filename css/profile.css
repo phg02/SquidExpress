@@ -13,6 +13,11 @@
     display: flex;
   }
   
+  .test{
+    margin-left: 13rem;
+    margin-right: 1rem;
+  }
+  
   .navbar{
     width: 12rem;
     height: 100vh;
