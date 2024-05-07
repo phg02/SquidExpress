@@ -274,11 +274,11 @@ input::placeholder{
 }
   
 .nav-link:hover{
-  color: #aa6c3c;
+  color: #B6845C;
 }
-  
+
 .nav-link:active{
-  color: #da9a6a;
+  color: #E2AD83;
 }
   
 .nav-link{
