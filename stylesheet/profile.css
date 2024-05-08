@@ -14,8 +14,6 @@
   }
   
   .profile{
-    margin-left: 13rem;
-    margin-right: 1rem;
     display: flex;
     flex-direction: column;
   }

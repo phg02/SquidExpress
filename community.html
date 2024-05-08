@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,8 @@
     <link rel="stylesheet" href="stylesheet/community.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/797e28e901.js" crossorigin="anonymous"></script>
-    
 </head>
+
 <body>
 
     <div class="main">
@@ -51,188 +52,221 @@
             </ul>
         </nav>
 
-        <div class="search-bar">
-            <div class="top">         
-                <input class="search" type="text" placeholder="Search...">
-                <div class="sortby">
-                    <select>
-                        <option>Earliest post</option>
-                        <option>Latest post</option>
-                    </select>
-                </div>
-            </div>
+        <div class="wrapper">
+            <form>
+                <div class="search-bar">
+                    <div class="top">
+                        <div class="search">
+                            <input type="text" placeholder="Search...">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="sortby">
+                            <select>
+                                <option>Earliest post</option>
+                                <option>Latest post</option>
+                            </select>
+                        </div>
+                    </div>
 
-            <div class="bottom">
-                <p>Filter by date:</p>
-                <div class="start-date">
-                    <input type="date">
+                    <div class="bottom">
+                        <p>Filter by date:</p>
+                        <div class="start-date">
+                            <input type="date">
+                        </div>
+                        <div class="end-date">
+                            <input type="date">
+                        </div>
+                    </div>
                 </div>
-                <div class="end-date">
-                    <input type="date">
+            </form>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="header-name">
+                            <img src="images/dogcol1.jpg" alt="dog">
+                            <p>Username . dd/mm/yyyy</p>
+                        </div>
+                        <p>Lorem ipsum</p>
+                        <p class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                            doloribus
+                            error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate
+                            tempore
+                            vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
+                        <button class="see-more-btn">See more</button>
+                    </div>
+
+                    <div class="card-body">
+                        <img src="images/catcol1.jpg" alt="dog">
+                    </div>
+
+                    <div class="card-footer">
+                        <div type="button" class="heartBtn">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <p>100 Likes</p>
+
+                        <div type="button" class="commentBtn" data-modal-target="#modal">
+                            <i class="fa-regular fa-comment d-inline"></i>
+                        </div>
+                        <p>100 Comments</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="header-name">
+                            <img src="images/dogcol1.jpg" alt="dog">
+                            <p>Username . dd/mm/yyyy</p>
+                        </div>
+                        <p>Lorem ipsum</p>
+                        <p class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                            doloribus
+                            error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate
+                            tempore
+                            vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
+                        <button class="see-more-btn">See more</button>
+                    </div>
+
+                    <div class="card-footer">
+                        <div type="button" class="commentBtn">
+                            <i class="fa-regular fa-comment d-inline"></i>
+                        </div>
+                        <p>100 Comments</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="header-name">
+                            <img src="images/dogcol1.jpg" alt="dog">
+                            <p>Username . dd/mm/yyyy</p>
+                        </div>
+                        <p>Lorem ipsum</p>
+                        <p class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                            doloribus
+                            error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate
+                            tempore
+                            vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
+                        <button class="see-more-btn">See more</button>
+                    </div>
+
+                    <div class="card-body">
+                        <img src="images/catcol1.jpg" alt="dog">
+                    </div>
+
+                    <div class="card-footer">
+                        <div type="button" class="commentBtn" data-modal-target="#modal">
+                            <i class="fa-regular fa-comment d-inline"></i>
+                        </div>
+                        <p>100 Comments</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="header-name">
+                            <img src="images/dogcol1.jpg" alt="dog">
+                            <p>Username . dd/mm/yyyy</p>
+                        </div>
+                        <p>Lorem ipsum</p>
+                        <p class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                            doloribus
+                            error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate
+                            tempore
+                            vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
+                        <button class="see-more-btn">See more</button>
+                    </div>
+
+                    <div class="card-body">
+                        <img src="images/catcol1.jpg" alt="dog">
+                    </div>
+
+                    <div class="card-footer">
+                        <div type="button" class="commentBtn" data-modal-target="#modal">
+                            <i class="fa-regular fa-comment d-inline"></i>
+                        </div>
+                        <p>100 Comments</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="header-name">
+                            <img src="images/dogcol1.jpg" alt="dog">
+                            <p>Username . dd/mm/yyyy</p>
+                        </div>
+                        <p>Lorem ipsum</p>
+                        <p class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                            doloribus
+                            error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate
+                            tempore
+                            vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
+                        <button class="see-more-btn">See more</button>
+                    </div>
+
+                    <div class="card-body">
+                        <img src="images/catcol1.jpg" alt="dog">
+                    </div>
+
+                    <div class="card-footer">
+                        <div type="button" class="commentBtn" data-modal-target="#modal">
+                            <i class="fa-regular fa-comment d-inline"></i>
+                        </div>
+                        <p>100 Comments</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="cards">
-            <div class="card">
-                <div class="card-header">
-                    <div class="header-name">
-                        <img src="images/dogcol1.jpg" alt="dog">
-                        <p>Username . dd/mm/yyyy</p>
-                    </div>
-                    <p>Lorem ipsum</p>
-                    <p class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate tempore vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
-                    <button class="see-more-btn">See more</button>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="information">
+                <div class="infor">
+                    <img src="images/dogcol1.jpg" alt="dog">
+                    <p>Username . dd/mm/yyyy</p>
                 </div>
 
-                <div class="card-body">
-                    <img src="images/catcol1.jpg" alt="dog">
-                </div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+        </div>
 
-                <div class="card-footer">
-                    <div type="button" class="heartBtn">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <p>100 Likes</p>
-                    
-                    <div type="button" class="commentBtn" data-modal-target="#modal">
-                        <i class="fa-regular fa-comment d-inline"></i>
-                    </div>
-                    <p>100 Comments</p>
+        <div class="modal-body">
+            <div class="text">
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi explicabo
+                    esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate tempore vero sed doloribus quae
+                    numquam asperiores saepe, pariatur illum.</p>
+            </div>
+            <img src="images/catcol1.jpg" alt="dog">
+        </div>
+
+        <div class="modal-footer">
+            <div class="cmt-section">
+                <img src="images/dogcol1.jpg" alt="dog">
+
+                <div class="content">
+                    <p>Username</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi
+                        explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate tempore vero sed
+                        doloribus quae numquam asperiores saepe, pariatur illum.</p>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-header">
-                    <div class="header-name">
-                        <img src="images/dogcol1.jpg" alt="dog">
-                        <p>Username . dd/mm/yyyy</p>
-                    </div>
-                    <p>Lorem ipsum</p>
-                    <p class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate tempore vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
-                    <button class="see-more-btn">See more</button>
-                </div>
 
-                <div class="card-footer">
-                    <div type="button" class="commentBtn">
-                        <i class="fa-regular fa-comment d-inline"></i>
-                    </div>
-                    <p>100 Comments</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <div class="header-name">
-                        <img src="images/dogcol1.jpg" alt="dog">
-                        <p>Username . dd/mm/yyyy</p>
-                    </div>
-                    <p>Lorem ipsum</p>
-                    <p class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate tempore vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
-                    <button class="see-more-btn">See more</button>
-                </div>
-
-                <div class="card-body">
-                    <img src="images/catcol1.jpg" alt="dog">
-                </div>
-
-                <div class="card-footer">
-                    <div type="button" class="commentBtn" data-modal-target="#modal">
-                        <i class="fa-regular fa-comment d-inline"></i>
-                    </div>
-                    <p>100 Comments</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <div class="header-name">
-                        <img src="images/dogcol1.jpg" alt="dog">
-                        <p>Username . dd/mm/yyyy</p>
-                    </div>
-                    <p>Lorem ipsum</p>
-                    <p class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate tempore vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
-                    <button class="see-more-btn">See more</button>
-                </div>
-
-                <div class="card-body">
-                    <img src="images/catcol1.jpg" alt="dog">
-                </div>
-
-                <div class="card-footer">
-                    <div type="button" class="commentBtn" data-modal-target="#modal">
-                        <i class="fa-regular fa-comment d-inline"></i>
-                    </div>
-                    <p>100 Comments</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <div class="header-name">
-                        <img src="images/dogcol1.jpg" alt="dog">
-                        <p>Username . dd/mm/yyyy</p>
-                    </div>
-                    <p>Lorem ipsum</p>
-                    <p class="post-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate tempore vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
-                    <button class="see-more-btn">See more</button>
-                </div>
-
-                <div class="card-body">
-                    <img src="images/catcol1.jpg" alt="dog">
-                </div>
-
-                <div class="card-footer">
-                    <div type="button" class="commentBtn" data-modal-target="#modal">
-                        <i class="fa-regular fa-comment d-inline"></i>
-                    </div>
-                    <p>100 Comments</p>
-                </div>
+            <div class="modal-cmt">
+                <img src="images/dogcol1.jpg" alt="dog">
+                <input type="text" class="comment-input" placeholder="Write a comment...">
+                <button id="comment-btn">Comment</button>
             </div>
         </div>
     </div>
 
-        <div class="modal" id="modal">
-            <div class="modal-header">
-                <div class="information">
-                    <div class="infor">
-                        <img src="images/dogcol1.jpg" alt="dog">
-                        <p>Username . dd/mm/yyyy</p>    
-                    </div>
-    
-                    <button data-close-button class="close-button">&times;</button>
-                </div>       
-            </div>
+    <div id="overlay"></div>
 
-            <div class="modal-body">
-                <div class="text">
-                    <p>Lorem ipsum</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate tempore vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
-                </div>
-                <img src56="images/catcol1.jpg" alt="dog">
-            </div>
-
-            <div class="modal-footer">
-                <div class="cmt-section">
-                    <img src="images/dogcol1.jpg" alt="dog">
-
-                    <div class="content">
-                        <p>Username</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate tempore vero sed doloribus quae numquam asperiores saepe, pariatur illum.</p>
-                    </div>
-                </div>
-
-
-                <div class="modal-cmt">
-                    <img src="images/dogcol1.jpg" alt="dog">
-                    <input type="text" class="comment-input" placeholder="Write a comment...">
-                    <button id="comment-btn">Comment</button>
-                </div>
-            </div>
-        </div>
-
-        <div id="overlay"></div>
-    
-<script src="javascript/community.js"></script>
+    <script src="javascript/community.js"></script>
 </body>
+
 </html>
