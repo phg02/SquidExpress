@@ -13,9 +13,36 @@
     display: flex;
   }
   
-  .test{
+  .profile{
     margin-left: 13rem;
     margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-info{
+    display: flex;
+    gap: 30px;
+  }
+  .profile-info img{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    border: 3px solid #B8938B;
+  }
+  .profile-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile-name{
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    gap: 20px;
+  }
+  .profile-follow{
+    display: flex;
+    gap: 15px;
   }
   
   .navbar{
@@ -57,7 +84,7 @@
   }
   
   @media only screen and (max-width: 600px){
-    .test{
+    .profile{
       margin: 0.5rem 0.5rem;
     }
   

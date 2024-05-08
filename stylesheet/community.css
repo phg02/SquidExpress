@@ -113,6 +113,14 @@ padding: 0;
   padding: 0px 10px;
   gap: 5px;
 }
+.heartBtn{
+  background-color: #ff8075;
+  color: #FFFDF5;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
 .commentBtn{
   background-color: #B6845C;
   color: #FFFDF5;
