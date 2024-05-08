@@ -41,9 +41,9 @@ body {
 .search input {
   padding: 5px 5px 5px 10px;
   border: 3px solid #8D8D8D;
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
-  width: 300px;
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
+  width: 15rem;
   height: 38px;
 }
 
@@ -51,8 +51,8 @@ body {
   padding: 5px;
   background-color: #8D8D8D;
   border: 3px solid #8D8D8D;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
   font-size: large;
   color: #fff;
   height: 38px;
@@ -62,6 +62,12 @@ body {
 .search button:hover {
   color: #000;
   cursor: pointer;
+}
+select {
+  padding: 8px 0px 8px 5px;
+  border-radius: 18px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #8D8D8D;
 }
 
 .bottom {
@@ -333,6 +339,21 @@ input::placeholder {
   color: #7f4b23;
 }
 
+*::-webkit-scrollbar-track {
+    background-color: rgba(217, 217, 217, 0.505);
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(217, 217, 217, 0.505);
+    border-radius: 30px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #B8938B;
+    border-radius: 20px;
+}
+
 @media only screen and (max-width: 1000px) {
   .navbar {
     width: 4rem;
@@ -346,6 +367,9 @@ input::placeholder {
 @media only screen and (max-width: 700px) {
   .search-bar {
     margin: 0.5rem 0.5rem;
+  }
+  .search input {
+    width: 10rem;
   }
   .card {
     margin: 0.5rem 0.5rem;
