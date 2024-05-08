@@ -1,6 +1,10 @@
 :root{
     font-size: 17px;
   }
+
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
   
   body{
     color:black;
@@ -9,19 +13,71 @@
     padding: 0;
   }
   
-  .main{
+  .main {
     display: flex;
+    width: 100vw;
   }
   
-  #navbar{
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 3rem 0rem;
+    gap: 1rem;
+  }
+  .box{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+    width: 45rem;
+    max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.614);
+    border: 1px solid #b8938b;
+    border-radius: 15px;
+  }
+  .photo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+    width: 45rem;
+    max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.614);
+    border: 1px solid #b8938b;
+    border-radius: 15px;
+  }
+  .info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .photo img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+  }
+  .logoutBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    max-width: 80%;
+    height: 2.5rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #C91432;
+    color: white;
+  }
+  
+  .navbar {
     width: 12rem;
     height: 100vh;
     position: fixed;
-    background-color: #FFFDF5;
-    border-right: 2px solid #B8938B;
+    background-color: #fffdf5;
+    border-right: 1px solid #b8938b;
   }
   
-  #nav-list{
+  .nav-list {
     list-style: none;
     padding: 0 1.2rem;
     margin: 0;
@@ -30,44 +86,142 @@
     align-items: center;
   }
   
-  #nav-item{
+  .nav-item {
     width: 100%;
   }
   
-  #nav-link:hover{
-    color: #B6845C;
+  .nav-link:hover {
+    color: #b6845c;
   }
   
-  #nav-link:active{
-    color: #E2AD83;
+  .nav-link:active {
+    color: #e2ad83;
   }
   
-  #nav-link{
+  .nav-link {
     display: flex;
-    gap:12px;
+    gap: 12px;
     align-items: center;
     text-decoration: none;
     height: 4rem;
-    color: #7F4B23;
+    color: #7f4b23;
   }
   
-  @media only screen and (max-width: 600px){
-    #navbar{
-      bottom: 0;
-      width: 100vw;
-      height: 4rem;
-      border-top: 2px solid #B8938B;
+  body.modal-open {
+    overflow: hidden;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    overflow-y: auto;
+    max-height: calc(100vh - 40px);
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  *::-webkit-scrollbar-track {
+      background-color: rgba(217, 217, 217, 0.505);
+  }
+  
+  *::-webkit-scrollbar {
+      width: 10px;
+      background-color: rgba(217, 217, 217, 0.505);
+      border-radius: 30px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+      background-color: #B8938B;
+      border-radius: 20px;
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .navbar {
+      width: 4rem;
     }
   
-    #nav-list{
-      flex-direction: row;
-    }
-  
-    #nav-link{
-      justify-content: center;
-    }
-  
-    #nav-link p{
+    .nav-link p {
       display: none;
     }
   }
+  
+  @media only screen and (max-width: 1000px) {
+  
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 4rem;
+      border-top: 2px solid #b8938b;
+    }
+  
+    .nav-list {
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      justify-content: center;
+    }
+  
+    .nav-link p {
+      display: none;
+    }
+  
+    .modal{
+      height: 500px;
+    }
+  }
+  

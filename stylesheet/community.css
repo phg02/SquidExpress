@@ -44,7 +44,7 @@ body {
   border-bottom-left-radius: 18px;
   border-top-left-radius: 18px;
   width: 15rem;
-  height: 38px;
+  height: 35px;
 }
 
 .search button {
@@ -55,7 +55,7 @@ body {
   border-top-right-radius: 18px;
   font-size: large;
   color: #fff;
-  height: 38px;
+  height: 35px;
   width: 40px;
 }
 
@@ -64,7 +64,7 @@ body {
   cursor: pointer;
 }
 select {
-  padding: 8px 0px 8px 5px;
+  padding: 7px 0px 7px 5px;
   border-radius: 18px;
   background-color: rgb(255, 255, 255);
   border: 2px solid #8D8D8D;
