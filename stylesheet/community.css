@@ -155,6 +155,11 @@ select {
   padding: 0px 10px;
   gap: 5px;
 }
+.card-footer form{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
 .heartBtn {
   background-color: #ff8075;
   color: #fffdf5;
