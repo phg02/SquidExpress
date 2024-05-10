@@ -9,8 +9,18 @@
     padding: 0;
   }
   
-  .main{
+  .main {
     display: flex;
+    width: 100vw;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 5rem 0rem;
+    gap: 1rem;
   }
   
   .profile{
