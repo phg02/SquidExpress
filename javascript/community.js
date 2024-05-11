@@ -80,7 +80,7 @@ function submitComment() {
     let img = document.createElement('img');
     let content = document.createElement('div');
     let username = document.createElement('p');
-    let text = document.createElement('div');
+    let text = document.createElement('p');
 
     comment.classList.add('cmt-section');
     content.classList.add('content');
