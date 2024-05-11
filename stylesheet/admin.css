@@ -152,8 +152,8 @@ select {
 .card-footer {
   align-items: center;
   display: flex;
+  justify-content: space-between;
   padding: 0px 20px;
-  gap: 30px;
 }
 .card-footer form{
   display: flex;
@@ -261,6 +261,24 @@ select {
 body.modal-open {
   overflow: hidden;
 }
+.delete-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C91432;
+    border-radius: 15px;
+    color: whitesmoke;
+    width: 95px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+.delete-btn:hover{
+    background-color: rgb(246, 99, 99);
+}
+.delete-btn:active{
+    background-color: rgb(154, 73, 73);
+}
 
 .modal {
   position: fixed;
@@ -277,7 +295,63 @@ body.modal-open {
   height: 700px;
   overflow-y: scroll;
 }
-
+#deleteModal{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+#deleteModal .modal-header2{
+    padding: 5px 15px;
+    justify-content: flex-end;
+    display: flex;
+}
+#deleteModal .modal-header2 button{
+    font-size: 3rem;
+    font-weight: 200;
+}
+#deleteModal .modal-body2{
+    font-size: 20px;
+    display: flex;
+    padding: 50px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #deleteModal .modal-body2 div{
+    display: flex;
+    gap: 1rem;
+  }
+  #deleteModal .modal-body2 div button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 8rem;
+    border-radius: 15px;
+    border: none;
+  }
+  .delete{
+    background-color: #C91432;;
+    color: white;
+  }
+  .delete:hover{
+    background-color: rgb(246, 99, 99);
+  }
+  .delete:active{
+    background-color: rgb(154, 73, 73);
+  }
+  .cancelBtn{
+    background-color: #6f6f6f;
+    color: white;
+  }
+  .cancelBtn:hover{
+    background-color: rgb(146, 146, 146);
+  }
+  .cancelBtn:active{
+    background-color: rgb(46, 46, 46);
+  }
+  
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
 }
