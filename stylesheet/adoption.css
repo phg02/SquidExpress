@@ -88,8 +88,8 @@
     flex-direction: column;
   }
   .card img{
-    border-top-left-radius: 14px;
-    border-top-right-radius: 14px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
   }
   .description{
     padding: 0px 20px;

@@ -1,21 +1,28 @@
-:root{
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
   font-size: 17px;
 }
 
-body{
-  color:black;
-  background-color: #FFFDF5;
+body {
+  color: #7f4b23;
+  background-color: #fffdf5;
   margin: 0;
   padding: 0;
 }
-
-.main{
+.main {
   display: flex;
+  width: 100vw;
 }
 
-.test{
-  margin-left: 13rem;
-  margin-right: 1rem;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .navbar {
@@ -67,9 +74,6 @@ body{
 }
 
 @media only screen and (max-width: 700px) {
-  .test {
-    margin: 0.5rem 0.5rem;
-  }
   .navbar {
     bottom: 0;
     width: 100vw;
