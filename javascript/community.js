@@ -62,15 +62,45 @@ function closeModal(modal) {
   document.body.classList.remove('modal-open');
 }
 
-let commentHolder = document.querySelector('.content');
 let commentBtn = document.querySelector('#comment-btn');
 
-commentBtn.addEventListener('click', function() {
-  let commentInput = document.querySelector('.comment-input');
-  let card = document.createElement('p');
-
-  card.textContent = commentInput.value;
-  commentHolder.appendChild(card);
-  commentInput.value = '';
-
+commentBtn.addEventListener('click', submitComment);
+document.querySelector('.comment-input').addEventListener('keypress', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    submitComment();
+  }
 });
+
+function submitComment() {
+  let commentInput = document.querySelector('.comment-input');
+  
+  if (commentInput.value.trim() !== '') {
+    let comment = document.createElement('div');
+    let img = document.createElement('img');
+    let content = document.createElement('div');
+    let username = document.createElement('p');
+    let text = document.createElement('div');
+
+    comment.classList.add('cmt-section');
+    content.classList.add('content');
+    img.src = 'images/dogcol1.jpg';
+    img.alt = 'dog';
+    username.textContent = 'Username';
+    text.textContent = commentInput.value.trim();
+
+    content.appendChild(username);
+    content.appendChild(text);
+
+    comment.appendChild(img);
+    comment.appendChild(content);
+
+    let modalFooter = document.querySelector('.modal-footer');
+    modalFooter.insertBefore(comment, document.querySelector('.modal-cmt'));
+
+    commentInput.value = '';
+  } 
+  else {
+    alert('Please enter a valid comment.');
+  }
+}
