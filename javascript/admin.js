@@ -87,15 +87,19 @@ function submitComment() {
     let comment = document.createElement('div');
     let img = document.createElement('img');
     let content = document.createElement('div');
-    let username = document.createElement('p');
-    let text = document.createElement('p');
+    let info = document.createElement('div');
+    let username = document.createElement('div');
+    let text = document.createElement('div');
 
     comment.classList.add('cmt-section');
     content.classList.add('content');
+    info.classList.add('info');
     img.src = 'images/dogcol1.jpg';
     img.alt = 'dog';
     username.textContent = 'Username';
     text.textContent = commentInput.value.trim();
+
+    info.appendChild(username);
 
     content.appendChild(username);
     content.appendChild(text);

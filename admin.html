@@ -16,35 +16,14 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="fa-solid fa-people-group"></i>
-                        <p class="nav-text">Community</p>
+                        <p class="nav-text">Users List</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <p class="nav-text">Adoption</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa-solid fa-square-plus"></i>
-                        <p class="nav-text">Create post</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa-solid fa-user"></i>
-                        <p class="nav-text">Profile</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="fa-solid fa-gear"></i>
-                        <p class="nav-text">Setting</p>
+                        <i class="fa-solid fa-file"></i>
+                        <p class="nav-text">Manage Posts</p>
                     </a>
                 </li>
             </ul>
@@ -53,30 +32,33 @@
         <div class="wrapper">
             <form>
                 <div class="search-bar">
-                    <div class="top">
-                        <div>Manage Posts</div>
-                        <div class="search">
-                            <input type="text" placeholder="Search post title...">
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                        <div class="sortby">
-                            <select name="sortby" id="sortby">
-                                <option disabled selected>Sort by</option> 
-                                <option>Earliest post</option>
-                                <option>Latest post</option>
-                            </select>
-                        </div>
-                    </div>
+                        <div class="manage">Manage Posts</div>
 
-                    <div class="bottom">
-                        <p>Filter by date:</p>
-                        <div class="start-date">
-                            <input type="date">
+                        <div class="filter">
+                            <div class="top">
+                                <div class="search">
+                                    <input type="text" placeholder="Search post title...">
+                                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                                <div class="sortby">
+                                    <select name="sortby" id="sortby">
+                                        <option disabled selected>Sort by</option> 
+                                        <option>Earliest post</option>
+                                        <option>Latest post</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="bottom">
+                                <p>Filter by date:</p>
+                                <div class="start-date">
+                                    <input type="date">
+                                </div>
+                                <div class="end-date">
+                                    <input type="date">
+                                </div>
+                            </div>
                         </div>
-                        <div class="end-date">
-                            <input type="date">
-                        </div>
-                    </div>
                 </div>
             </form>
 
@@ -182,19 +164,18 @@
                             </form>
                             
                             <div>
-                                <div type="button" class="commentBtn" data-modal-target="#modal">
+                                <div type="button" class="commentBtn" data-modal-target="#modal1">
                                     <i class="fa-regular fa-comment d-inline"></i>
                                 </div>
                                 <p>100</p>
                             </div>
                         </div>
 
-                        <div class="delete-btn" ata-modal-target="#deleteModal">Delete</div>
+                        <div class="delete-btn" data-modal-target="#deleteModal">Delete</div>
                     </div>
                 </div>        
             </div>
         </div>
-
     </div>
 
     <div class="modal" id="modal">
@@ -224,10 +205,15 @@
                 <img src="images/dogcol1.jpg" alt="dog">
 
                 <div class="content">
-                    <p>Username</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi
+                    <div class="info">
+                        <div>Username</div>
+                        <form>
+                            <div class="trash"><i class="fa-solid fa-trash"></i></div>
+                        </form>
+                    </div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi
                         explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate tempore vero sed
-                        doloribus quae numquam asperiores saepe, pariatur illum.</p>
+                        doloribus quae numquam asperiores saepe, pariatur illum.</div>
                 </div>
             </div>
 
@@ -266,10 +252,15 @@
                 <img src="images/dogcol1.jpg" alt="dog">
 
                 <div class="content">
-                    <p class="username">Username</p>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi
+                    <div class="info">
+                        <div>Username</div>
+                        <form>
+                            <div class="trash"><i class="fa-solid fa-trash"></i></div>
+                        </form>
+                    </div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloribus error eligendi
                         explicabo esse distinctio placeat blanditiis? Nesciunt, eaque, cupiditate tempore vero sed
-                        doloribus quae numquam asperiores saepe, pariatur illum.</p>
+                        doloribus quae numquam asperiores saepe, pariatur illum.</div>
                 </div>
             </div>
 
@@ -290,7 +281,10 @@
         </div>
     
         <div class="modal-body2">
-            <p>Are you sure you want to delete this user post?</p>
+            <div>
+                <div>Are you sure you want to delete this user post?</div>
+                <div>WARNING: This action is irreversible!!!</div>
+            </div>
             <div>
                 <button class="delete">Delete account</button>
                 <button class="cancelBtn">Cancel</button>

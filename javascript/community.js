@@ -79,8 +79,8 @@ function submitComment() {
     let comment = document.createElement('div');
     let img = document.createElement('img');
     let content = document.createElement('div');
-    let username = document.createElement('p');
-    let text = document.createElement('p');
+    let username = document.createElement('div');
+    let text = document.createElement('div');
 
     comment.classList.add('cmt-section');
     content.classList.add('content');

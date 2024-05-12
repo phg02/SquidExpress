@@ -27,14 +27,21 @@ body {
 
 .search-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   padding: 20px 0px 0px 0px;
 }
 .top {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
+
+.manage{
+  font-size: 30px;
+  font-weight: 550;
+  padding: 0px 10px;
+}
+
 .search {
   display: flex;
 }
@@ -314,11 +321,20 @@ body.modal-open {
     display: flex;
     padding: 50px 0px;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    gap: 3rem;
   }
-  #deleteModal .modal-body2 div{
+  .modal-body2 div:nth-child(1) div:nth-child(2){
+    color: #C91432;
+  }
+  .modal-body2 div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+  }
+  #deleteModal .modal-body2 div:nth-child(2){
     display: flex;
     gap: 1rem;
   }
@@ -407,8 +423,16 @@ body.modal-open {
   height: 40px;
   border-radius: 50%;
 }
+.info{
+  display: flex;
+  justify-content: space-between;
+  gap:0.5rem;
+}
 .content {
-  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 10px 15px;
   background-color: aliceblue;
   border-radius: 20px;
   max-width: 90%;
@@ -507,7 +531,7 @@ input::placeholder {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .search-bar {
     margin: 0.5rem 0.5rem;
   }
@@ -544,4 +568,11 @@ input::placeholder {
   .modal{
     height: 500px;
   }
+  .search-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
 }
