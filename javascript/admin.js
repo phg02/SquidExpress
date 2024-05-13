@@ -93,6 +93,7 @@ function submitComment() {
 
     comment.classList.add('cmt-section');
     content.classList.add('content');
+    username.classList.add('username');
     info.classList.add('info');
     img.src = 'images/dogcol1.jpg';
     img.alt = 'dog';

@@ -7,6 +7,10 @@
 :root {
   font-size: 17px;
 }
+body[data-theme="dark"] {
+  color: #fffdf5;
+  background-color: #7f4b23;
+}
 
 body {
   color: #7f4b23;
@@ -333,15 +337,21 @@ body.modal-open {
   height: 40px;
   border-radius: 50%;
 }
+.username{
+  color:#3a3a3a;
+}
 .content {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.7rem;
   padding: 10px 15px;
   background-color: aliceblue;
   border-radius: 20px;
   max-width: 90%;
   word-wrap: break-word;
+}
+.content div:nth-child(2){
+  color: #6e6e6e;
 }
 
 .modal-cmt {
@@ -358,10 +368,11 @@ body.modal-open {
 }
 .modal-cmt form{
   display: flex;
+  gap: 0.5rem;
 }
 .comment-input {
   border-radius: 15px;
-  width: 70%;
+  width: 25rem;
   height: 40px;
   padding: 5px;
 }

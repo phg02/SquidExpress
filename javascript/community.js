@@ -84,6 +84,7 @@ function submitComment() {
 
     comment.classList.add('cmt-section');
     content.classList.add('content');
+    username.classList.add('username');
     img.src = 'images/dogcol1.jpg';
     img.alt = 'dog';
     username.textContent = 'Username';
