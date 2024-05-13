@@ -1,5 +1,51 @@
 :root{
     font-size: 17px;
+    --background-color: rgb(255, 253, 245);
+    --font-color: rgb(51, 51, 51);
+
+    --nav-color: rgb(127, 75, 35);
+    --nav-hover-color: rgb(182, 132, 107);
+    --nav-active-color: rgb(226, 173, 131);
+
+    --box-background-color: rgba(255, 255, 255, 0.614);
+
+    --button-color: rgb(184, 147, 139);
+    --button-hover-color: rgb(149, 92, 92);
+    --button-active-color: rgb(100, 80, 80);
+
+    --logout-color: rgb(201, 20, 50);
+    --logout-hover-color: rgb(246, 99, 99);
+    --logout-active-color: rgb(154, 73, 73);
+
+    --cancel-color: rgb(111, 111, 111);
+    --cancel-hover-color: rgb(146, 146, 146);
+    --cancel-active-color: rgb(46, 46, 46);
+
+    --overlay-color: rgba(0, 0, 0, .5);
+  }
+  body[data-theme="dark"] {
+    --background-color: rgb(35, 40, 48);
+    --font-color: rgb(247, 247, 247);
+
+    --nav-color: rgb(222, 233, 255);
+    --nav-hover-color: rgb(175, 200, 250);
+    --nav-active-color: rgb(111, 136, 186);
+
+    --box-background-color: rgba(255, 255, 255, 0.19);
+
+    --button-color: rgb(184, 180, 197);
+    --button-hover-color: rgb(184, 180, 197);
+    --button-active-color: rgb(184, 180, 197);
+
+    --logout-color: rgb(201, 20, 50);
+    --logout-hover-color: rgb(246, 99, 99);
+    --logout-active-color: rgb(154, 73, 73);
+
+    --cancel-color: rgb(111, 111, 111);
+    --cancel-hover-color: rgb(146, 146, 146);
+    --cancel-active-color: rgb(46, 46, 46);
+
+    --overlay-color: rgba(0, 0, 0, .5);
   }
 
   *, *::after, *::before {
@@ -7,8 +53,8 @@
   }
   
   body{
-    color:black;
-    background-color: #FFFDF5;
+    color: var(--font-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
   }
@@ -33,8 +79,8 @@
     padding: 10px 30px 10px 30px;
     width: 45rem;
     max-width: 90%;
-    background-color: rgba(255, 255, 255, 0.614);
-    border: 1px solid #b8938b;
+    background-color: var(--box-background-color);
+    border: 1px solid var(--button-color);
     border-radius: 15px;
   }
   .photo{
@@ -44,8 +90,8 @@
     padding: 20px 30px 20px 30px;
     width: 45rem;
     max-width: 90%;
-    background-color: rgba(255, 255, 255, 0.614);
-    border: 1px solid #b8938b;
+    background-color: var(--box-background-color);
+    border: 1px solid var(--button-color);
     border-radius: 15px;
   }
   .info{
@@ -123,14 +169,14 @@
     width: 8rem;
     border-radius: 15px;
     border: none;
-    background-color: #b8938b;
-    color: white;
+    background-color: var(--button-color);
+    color: var(--background-color);
   }
   .settingBtn:hover{
-    background-color: rgb(149, 92, 92);
+    background-color: var(--button-hover-color);
   }
   .settingBtn:active{
-    background-color: rgb(100, 80, 80);
+    background-color: var(--button-active-color);
   }
   .logoutBtn{
     display: flex;
@@ -141,22 +187,22 @@
     height: 2.5rem;
     border-radius: 15px;
     border: none;
-    background-color: #C91432;
-    color: white;
+    background-color: var(--logout-color);
+    color: var(--background-color);
   }
   .logoutBtn:hover{
-    background-color: rgb(246, 99, 99);
+    background-color: var(--logout-hover-color);
   }
   .logoutBtn:active{
-    background-color: rgb(154, 73, 73);
+    background-color: var(--logout-active-color);
   }
   
   .navbar {
     width: 12rem;
     height: 100vh;
     position: fixed;
-    background-color: #fffdf5;
-    border-right: 1px solid #b8938b;
+    background-color: var(--background-color);
+    border-right: 1px solid var(--button-color);
   }
   
   .nav-list {
@@ -173,11 +219,11 @@
   }
   
   .nav-link:hover {
-    color: #b6845c;
+    color: var(--nav-hover-color);
   }
   
   .nav-link:active {
-    color: #e2ad83;
+    color: var(--nav-active-color);
   }
   
   .nav-link {
@@ -186,7 +232,7 @@
     align-items: center;
     text-decoration: none;
     height: 4rem;
-    color: #7f4b23;
+    color: var(--nav-color);
   }
   
   body.modal-open {
@@ -199,7 +245,7 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
-    border: 1px solid black;
+    border: 1px solid var(--font-color);
     border-radius: 10px;
     z-index: 10;
     background-color: white;
@@ -233,10 +279,10 @@
     align-items: center;
   }
   #usernameModal .modal-header{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--font-color);
   }
   #passwordModal .modal-header{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--font-color);
   }
   #deactivateModal .modal-header{
     padding: 5px 15px;
@@ -292,8 +338,8 @@
     border: none;
   }
   .deactivateBtn{
-    background-color: #C91432;;
-    color: white;
+    background-color: rgb(201, 20, 50);
+    color: var(--background-color);
   }
   .deactivateBtn:hover{
     background-color: rgb(246, 99, 99);
@@ -302,14 +348,14 @@
     background-color: rgb(154, 73, 73);
   }
   .cancelBtn{
-    background-color: #6f6f6f;
-    color: white;
+    background-color: var(--cancel-color);
+    color: var(--background-color);
   }
   .cancelBtn:hover{
-    background-color: rgb(146, 146, 146);
+    background-color: var(--cancel-hover-color);
   }
   .cancelBtn:active{
-    background-color: rgb(46, 46, 46);
+    background-color: var(--cancel-active-color);
   }
 
   
@@ -321,28 +367,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: var(--overlay-color);
     pointer-events: none;
   }
   
   #overlay.active {
     opacity: 1;
     pointer-events: all;
-  }
-  
-  *::-webkit-scrollbar-track {
-      background-color: rgba(217, 217, 217, 0.505);
-  }
-  
-  *::-webkit-scrollbar {
-      width: 10px;
-      background-color: rgba(217, 217, 217, 0.505);
-      border-radius: 30px;
-  }
-  
-  *::-webkit-scrollbar-thumb {
-      background-color: #B8938B;
-      border-radius: 20px;
   }
   
   @media only screen and (max-width: 1300px) {
@@ -378,6 +409,16 @@
   
     .modal{
       height: 500px;
+    }
+    .info{
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .photo img{
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
     }
   }
   

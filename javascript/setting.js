@@ -44,3 +44,22 @@ function closeModal(modal) {
   overlay.classList.remove('active')
   document.body.classList.remove('modal-open');
 }
+
+window.addEventListener('DOMContentLoaded', (event) => {
+  // Get the checkbox element 		
+  let checkbox = document.querySelector(".switch input[type='checkbox']")
+  
+  // Get the body tag	
+  let body = document.querySelector("body")
+  
+  // This event handler listens for the checkbox to be checked or unchecked
+  // Then, if the checkbox is checked (event.target.checked == true)
+  // Then apply `data-theme="dark"` to the body tag
+  // Otherwise, remove the attribute
+  checkbox.addEventListener('change', (event) => {
+          
+    event.target.checked ? body.setAttribute('data-theme', "dark") : body.removeAttribute("data-theme")
+
+  });
+
+});
