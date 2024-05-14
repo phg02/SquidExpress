@@ -1,14 +1,20 @@
-:root{
-    font-size: 17px;
-  }
-
-  *, *::after, *::before {
+ *, *::after, *::before {
     box-sizing: border-box;
   }
   
-  body{
-    color:black;
-    background-color: #FFFDF5;
+  :root{
+    font-size: 17px;
+    --background-color: rgb(255, 253, 245);
+    --font-color: rgb(51, 51, 51);
+  }
+  body[data-theme="dark"] {
+    --background-color: rgb(35, 40, 48);
+    --font-color: rgb(247, 247, 247);
+  }
+  
+  body {
+    color: var(--font-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
   }

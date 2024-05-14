@@ -4,17 +4,19 @@
   box-sizing: border-box;
 }
 
-:root {
+:root{
   font-size: 17px;
+  --background-color: rgb(255, 253, 245);
+  --font-color: rgb(51, 51, 51);
 }
 body[data-theme="dark"] {
-  color: #fffdf5;
-  background-color: #7f4b23;
+  --background-color: rgb(35, 40, 48);
+  --font-color: rgb(247, 247, 247);
 }
 
 body {
-  color: #7f4b23;
-  background-color: #fffdf5;
+  color: var(--font-color);
+  background-color: var(--background-color);
   margin: 0;
   padding: 0;
 }
