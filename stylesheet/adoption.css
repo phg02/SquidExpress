@@ -21,7 +21,6 @@
   
   .main {
     display: flex;
-    width: 100vw;
   }
   
   .wrapper {
@@ -179,6 +178,7 @@
       width: 100vw;
       height: 4rem;
       border-top: 2px solid #b8938b;
+      border-right: none;
     }
   
     .nav-list {
